@@ -1,5 +1,7 @@
-package ru.praktikum_services.qa_scooter;
+package api.client;
 
+import api.util.CourierAuthorization;
+import api.util.NewCourier;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
@@ -31,7 +33,7 @@ public class CourierClient {
 
     @Step("Send DELETE request to delete the courier: /api/v1/courier/:id")
     public void delete(String courierId) {
-         given()
+            given()
                 .pathParam("courierId", courierId)
                 .when()
                 .delete(COURIER_ID);

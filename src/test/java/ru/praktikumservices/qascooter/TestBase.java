@@ -1,4 +1,4 @@
-package ru.praktikum_services.qa_scooter;
+package ru.praktikumservices.qascooter;
 
 import io.restassured.RestAssured;
 import org.junit.Before;

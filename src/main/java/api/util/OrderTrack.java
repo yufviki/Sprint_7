@@ -1,4 +1,4 @@
-package ru.praktikum_services.qa_scooter;
+package api.util;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

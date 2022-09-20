@@ -1,5 +1,7 @@
-package ru.praktikum_services.qa_scooter;
+package api.client;
 
+import api.util.NewOrder;
+import api.util.OrderTrack;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.given;
@@ -20,7 +22,7 @@ public class OrderClient {
 
     @Step("Send PUT request to cancel the order: /api/v1/orders/cancel")
     public void cancel(OrderTrack orderTrack) {
-        given()
+            given()
                 .header("Content-type", "application/json")
                 .and()
                 .body(orderTrack)

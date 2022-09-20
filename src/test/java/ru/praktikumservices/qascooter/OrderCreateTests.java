@@ -1,5 +1,8 @@
-package ru.praktikum_services.qa_scooter;
+package ru.praktikumservices.qascooter;
 
+import api.client.OrderClient;
+import api.util.NewOrder;
+import api.util.OrderTrack;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.response.Response;
